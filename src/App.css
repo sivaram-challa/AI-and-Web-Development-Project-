@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #6a1b9a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.select-button {
+  display: block;
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.predict-button {
+  display: block;
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
