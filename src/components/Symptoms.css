@@ -1,0 +1,123 @@
+/* Symptoms.css */
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  flex: 1; /* Ensure the container takes up available horizontal space */
+}
+
+.select-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px; /* Fixed width */
+  align-self: center; /* Center the button horizontally */
+}
+
+.select-button:hover {
+  background-color: #4a1b9a;
+}
+
+.selected-symptoms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  width: 100%; /* Take full width of the container */
+  max-height: 200px; /* Fixed height to fit on screen */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.selected-symptom-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.remove-button {
+  margin-left: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a;
+}
+
+.text-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 100%;
+  max-width: 600px; /* Fixed max-width */
+  height: 100px; /* Fixed height */
+  resize: none;
+}
+
+.prediction-result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .select-button {
+    width: 150px; /* Adjust width for smaller screens */
+  }
+
+  .text-box {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+    height: 80px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .select-button {
+    width: 120px; /* Adjust width for smaller screens */
+    font-size: 14px; /* Adjust font-size for smaller screens */
+  }
+
+  .text-box {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+    height: 60px; /* Adjust height for smaller screens */
+  }
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

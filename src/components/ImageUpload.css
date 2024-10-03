@@ -1,0 +1,27 @@
+.Image-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.upload-box {
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.upload-label {
+  font-size: 48px;
+  color: #6a1b9a;
+}
+
+input[type="file"] {
+  display: none;
+}

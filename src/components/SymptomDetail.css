@@ -1,0 +1,9 @@
+/* SymptomDetail.css */
+
+.symptom-details-container {
+  margin-top: 20px; /* Add margin to move the detail box down */
+}
+
+.symptom-detail {
+  margin-top: 20px;
+}
